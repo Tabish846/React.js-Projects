@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: Arial, cursive, sans-serif;
+}
+.navbar {
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.9);
+  padding: 15px 20px;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+.navbar:hover {
+  background-color: #141414;
+}
+.navbar .logo img {
+  height: 35px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.navbar .logo img:hover {
+  transform: scale(1.2);
+}
+
+.navbar .menu a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.navbar .menu a:hover {
+  color: #e50914;
+
+}
+
+.navbar .profile img {
+  height: 35px;
+  margin-right: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.navbar .profile img:hover {
+  transform: scale(1.2);
+}
+
+.content{
+  padding: 60px 20px;
+  margin-top: -50px;
+}
+
+.row{
+  margin-bottom: 40px;
+}
+
+.row h2{
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.posters{
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+  overflow-x: auto;
+ scroll-snap-type: x mandatory;
+}
+
+.posters img{
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+ transition: transform 0.5s, box-shadow 0.2s;
+ scroll-snap-align: start;
+}
+
+.posters img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar{
+  height: 8px;
+  width: 8px;
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #111;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #f40612;
+}
