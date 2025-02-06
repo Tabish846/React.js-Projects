@@ -1,0 +1,37 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  background-color: #141414;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  margin-top: 100px;
+  width: 80%;
+  height: 700px;
+  cursor: pointer;
+}
+
+.left-btn, .right-btn{
+  position: absolute;
+  top: 40%;
+}
+.left-btn{
+  left: 100px;
+}
+.right-btn{
+  right: 100px;
+}
+
+button{
+  cursor: pointer;
+  font-size: 70px;
+  border: 2px solid #fa0202;
+  background-color: blue;
+  color: yellow;
+}
